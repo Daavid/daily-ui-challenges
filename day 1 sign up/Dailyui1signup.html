@@ -14,40 +14,68 @@
           border-style: none;
           background-color: seashell;
         }
-        .container {
-          max-width: 500px;
-        	text-align: center;
-        	font-size: 44;
+        .flex-container {
+         height: 100%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
         }
         .thanks{
           font-size: 42px;
           text-align: center;
         }
+        .form-control{
+          width: 480px;
+
+        }
         .image{
-          width: 500px;
+          width: 500px; 
+          padding-top: 20px;
+          margin: auto; 
+        
+          box-sizing: border-box;
+        }
+        .button{
+          margin-top: 20px;
         }
         
         </style>
   <body>
      <div class= "thanks">
        <h1> Thank you for visiting us!! </h1>
+
      </div>
         
-         <div class="container">
-  <h2>Daily UI Sign Up</h2>
+         <div class="flex-container">
+  
   <h3>Please enter your email to receive daily UI challenges!</h3>
+   
+  </div>
+
   
   <form>
-    <div class="input-group">
-      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-      <input id="email" type="text" class="form-control" name="email" placeholder="Email">
-      <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+
+    <div class="input-group image">
+    
+    <input type="email" class="form-control" id="email" placeholder="Enter email">
+      </div>
+      <div class="button">
+      <center><button type="button" class="btn btn-primary btn-lg">Register</button></center>
     </div>
+
     
   </form>
   <div class ="image">
-  <img src="challenge.jpg" height="362" width="478">
+  <img src="challenge.jpg" height="308" width="478">
   </div>
+  
 
     </body>
 </html>
